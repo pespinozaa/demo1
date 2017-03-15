@@ -1,0 +1,51 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; ":routeType" ":Trip" ":TransferRule" ":StopTime" ":Stop" ":Route" ":CalendarRule" ":CalendarDateRule" ":Agency" ; /*classes style*/
+	"PublicTransport:Concepci?nJer?nima" -> "PublicTransport:StopTime_Concepci?nJer?nima-Aluche" [ label = "PublicTransport:hasStopTime" ];
+	"PublicTransport:StopTime_Concepci?nJer?nima-Aluche" -> "PublicTransport:Concepci?nJer?nima" [ label = "PublicTransport:hasStopTime" ];
+	"untitled-ontology-7:EMT" -> "PublicTransport:PlazaMayor-Aluche" [ label = "untitled-ontology-7:hasRoute" ];
+	"PublicTransport:PlazaMayor-Concepci?nJer?nima" -> "PublicTransport:StopTime_PlazaMayor-Concepci?nJer?nima" [ label = "PublicTransport:hasStopTime" ];
+	"PublicTransport:PlazaMayor-Aluche" -> "PublicTransport:PlazaMayor-Concepci?nJer?nima" [ label = "PublicTransport:hasTrip" ];
+	"PublicTransport:PlazaMayor-Aluche" -> "PublicTransport:RouteTypeBus" [ label = "PublicTransport:hasRouteType" ];
+	"PublicTransport:PlazaMayor-Aluche" -> "PublicTransport:Calendar-LV" [ label = "PublicTransport:hasCalendarRule" ];
+	"PublicTransport:PlazaMayor-Aluche" -> "PublicTransport:Concepci?nJer?nima-Aluche" [ label = "PublicTransport:hasTrip" ];
+	"PublicTransport:PlazaMayor-Aluche" -> "PublicTransport:CalendarRuleExceptionLV" [ label = "PublicTransport:hasCalendarDateRule" ];
+	"PublicTransport:StopTime_PlazaMayor-Concepci?nJer?nima" -> "PublicTransport:PlazaMayor" [ label = "PublicTransport:hasStopTime" ];
+	"PublicTransport:PlazaMayor" -> "PublicTransport:TransferPlazaMayor" [ label = "PublicTransport:hasTransferRule" ];
+	"PublicTransport:PlazaMayor" -> "PublicTransport:StopTime_PlazaMayor-Concepci?nJer?nima" [ label = "PublicTransport:hasStopTime" ];
+	"PublicTransport:Concepci?nJer?nima-Aluche" -> "PublicTransport:StopTime_Concepci?nJer?nima-Aluche" [ label = "PublicTransport:hasStopTime" ];
+	":Stop" -> "xsd:string" [ label = "PublicTransport:stop_id" ];
+	":Agency" -> "xsd:string" [ label = "PublicTransport:name" ];
+	":Stop" -> ":StopTime" [ label = "PublicTransport:hasStopTime" ];
+	":CalendarRule" -> "xsd:boolean" [ label = "PublicTransport:saturday" ];
+	":TransferRule" -> "xsd:int" [ label = "PublicTransport:minimumTransferTime" ];
+	":StopTime" -> "xsd:string" [ label = "PublicTransport:departureTime" ];
+	":Agency" -> ":Route" [ label = "untitled-ontology-7:hasRoute" ];
+	":Route" -> "xsd:string" [ label = "PublicTransport:route_id" ];
+	":CalendarRule" -> "xsd:boolean" [ label = "PublicTransport:friday" ];
+	":CalendarDateRule" -> "xsd:dateTime" [ label = "PublicTransport:date" ];
+	":Route" -> "xsd:string" [ label = "PublicTransport:route_color" ];
+	":CalendarRule" -> "xsd:boolean" [ label = "PublicTransport:wednesday" ];
+	":Agency" -> "xsd:string" [ label = "PublicTransport:url" ];
+	":routeType" -> ":Route" [ label = "PublicTransport:hasRouteType" ];
+	":CalendarDateRule" -> ":Trip" [ label = "PublicTransport:hasCalendarDateRule" ];
+	":StopTime" -> "xsd:string" [ label = "PublicTransport:arrivalTime" ];
+	":Stop" -> "xsd:string" [ label = "PublicTransport:code" ];
+	":Agency" -> "xsd:string" [ label = "PublicTransport:agency_id" ];
+	":routeType" -> "xsd:string" [ label = "PublicTransport:route_type" ];
+	":CalendarRule" -> "xsd:boolean" [ label = "PublicTransport:thursday" ];
+	":CalendarRule" -> "xsd:boolean" [ label = "PublicTransport:sunday" ];
+	":Trip" -> "xsd:string" [ label = "PublicTransport:headsign" ];
+	":Route" -> ":Trip" [ label = "PublicTransport:hasTrip" ];
+	":CalendarDateRule" -> "xsd:boolean" [ label = "PublicTransport:date_addition" ];
+	":Trip" -> "xsd:string" [ label = "PublicTransport:direction" ];
+	":CalendarRule" -> "xsd:boolean" [ label = "PublicTransport:monday" ];
+	":Stop" -> ":TransferRule" [ label = "PublicTransport:hasTransferRule" ];
+	":CalendarRule" -> "xsd:boolean" [ label = "PublicTransport:tuesday" ];
+	":CalendarRule" -> ":Trip" [ label = "PublicTransport:hasCalendarRule" ];
+	":TransferRule" -> "xsd:string" [ label = "PublicTransport:destinatioStop" ];
+	":Route" -> "xsd:string" [ label = "PublicTransport:routeUrl" ];
+	":Trip" -> "xsd:string" [ label = "PublicTransport:trip_id" ];
+
+}
