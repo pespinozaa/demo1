@@ -1,0 +1,168 @@
+{
+  "@context" : {
+    "Route" : {
+      "@id" : "http://vocab.gtfs.org/terms#Route"
+    },
+    "hasRouteType" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#hasRouteType",
+      "@type" : "@id"
+    },
+    "url" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#url",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "trip_id" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#trip_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "destinatioStop" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#destinatioStop",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "agency_id" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#agency_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "arrivalTime" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#arrivalTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "date_addition" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#date_addition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "saturday" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#saturday",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "route_color" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#route_color",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTransferRule" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#hasTransferRule",
+      "@type" : "@id"
+    },
+    "minimumTransferTime" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#minimumTransferTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "service_id" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#service_id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "friday" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#friday",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "routeUrl" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#routeUrl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "headsign" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#headsign",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "route_id" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#route_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "wednesday" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#wednesday",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "name" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasCalendarRule" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#hasCalendarRule",
+      "@type" : "@id"
+    },
+    "Agency" : {
+      "@id" : "http://vocab.gtfs.org/terms#Agency"
+    },
+    "tuesday" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#tuesday",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "direction" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#direction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasStopTime" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#hasStopTime",
+      "@type" : "@id"
+    },
+    "TransferRule" : {
+      "@id" : "http://vocab.gtfs.org/terms#TransferRule"
+    },
+    "hasTrip" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#hasTrip",
+      "@type" : "@id"
+    },
+    "CalendarRule" : {
+      "@id" : "http://vocab.gtfs.org/terms#CalendarRule"
+    },
+    "monday" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#monday",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "CalendarDateRule" : {
+      "@id" : "http://vocab.gtfs.org/terms#CalendarDateRule"
+    },
+    "stop_id" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#stop_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "date" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#date",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "StopTime" : {
+      "@id" : "http://vocab.gtfs.org/terms#StopTime"
+    },
+    "Trip" : {
+      "@id" : "http://vocab.gtfs.org/terms#Trip"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "sunday" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#sunday",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "routeType" : {
+      "@id" : "http://vocab.gtfs.org/terms#routeType"
+    },
+    "departureTime" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#departureTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "route_type" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#route_type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "thursday" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#thursday",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "code" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#code",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasCalendarDateRule" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#hasCalendarDateRule",
+      "@type" : "@id"
+    },
+    "Stop" : {
+      "@id" : "http://vocab.gtfs.org/terms#Stop"
+    },
+    "hasRoute" : {
+      "@id" : "http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#hasRoute",
+      "@type" : "@id"
+    }
+  }
+}
