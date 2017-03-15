@@ -1,0 +1,367 @@
+@prefix :        <http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix PublicTransport:  <http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix untitled-ontology-7:  <http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#> .
+
+untitled-ontology-7:hasRoute
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Agency> ;
+      rdfs:label "hasRoute" ;
+      rdfs:range <http://vocab.gtfs.org/terms#Route> .
+
+<http://vocab.gtfs.org/terms#routeType>
+      a       owl:Class .
+
+<http://vocab.gtfs.org/terms#StopTime>
+      a       owl:Class .
+
+PublicTransport:PlazaMayor-Aluche
+      a       owl:NamedIndividual , <http://vocab.gtfs.org/terms#Route> ;
+      rdfs:comment "Ruta entre Plaza Mayor y Aluche" ;
+      PublicTransport:hasCalendarDateRule
+              PublicTransport:CalendarRuleExceptionLV ;
+      PublicTransport:hasCalendarRule
+              PublicTransport:Calendar-LV ;
+      PublicTransport:hasRouteType
+              PublicTransport:RouteTypeBus ;
+      PublicTransport:hasTrip
+              PublicTransport:PlazaMayor-ConcepciónJerónima , PublicTransport:ConcepciónJerónima-Aluche ;
+      PublicTransport:name
+              "PlazaMayor-Aluche"^^xsd:string ;
+      PublicTransport:routeUrl
+              "http://www.emtmadrid.es/aplicaciones/Itinerarios.aspx?linea=31"^^xsd:string ;
+      PublicTransport:route_color
+              "FFD700"^^xsd:string ;
+      PublicTransport:route_id
+              "031"^^xsd:string .
+
+PublicTransport:date_addition
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#CalendarDateRule> ;
+      rdfs:range xsd:boolean .
+
+<http://www.semanticweb.org/paola/ontologies/2016/PublicTransport>
+      a       owl:Ontology .
+
+PublicTransport:hasRouteType
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#routeType> ;
+      rdfs:range <http://vocab.gtfs.org/terms#Route> .
+
+PublicTransport:stop_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Stop> ;
+      rdfs:range xsd:string .
+
+<http://vocab.gtfs.org/terms#Route>
+      a       owl:Class .
+
+PublicTransport:sunday
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#CalendarRule> ;
+      rdfs:range xsd:boolean .
+
+PublicTransport:date
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#CalendarDateRule> ;
+      rdfs:range xsd:dateTime .
+
+PublicTransport:ConcepciónJerónima
+      a       owl:NamedIndividual , <http://vocab.gtfs.org/terms#Stop> ;
+      rdfs:comment "Parada de bus Concepción Jerónima" ;
+      PublicTransport:code
+              "112"^^xsd:string ;
+      PublicTransport:hasStopTime
+              PublicTransport:StopTime_ConcepciónJerónima-Aluche ;
+      PublicTransport:name
+              "Concepción Jerónima"^^xsd:string ;
+      PublicTransport:stop_id
+              "112"^^xsd:string .
+
+PublicTransport:code
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Stop> ;
+      rdfs:range xsd:string .
+
+PublicTransport:arrivalTime
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#StopTime> ;
+      rdfs:range xsd:string .
+
+PublicTransport:hasCalendarDateRule
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#CalendarDateRule> ;
+      rdfs:range <http://vocab.gtfs.org/terms#Trip> .
+
+<http://vocab.gtfs.org/terms#Stop>
+      a       owl:Class .
+
+PublicTransport:route_color
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Route> ;
+      rdfs:range xsd:string .
+
+PublicTransport:StopTime_PlazaMayor-ConcepciónJerónima
+      a       owl:NamedIndividual , <http://vocab.gtfs.org/terms#StopTime> ;
+      rdfs:comment "Tiempo en para de bus Plaza Mayor" ;
+      PublicTransport:arrivalTime
+              "07:00:00"^^xsd:string ;
+      PublicTransport:departureTime
+              "07:05:00"^^xsd:string ;
+      PublicTransport:hasStopTime
+              PublicTransport:PlazaMayor .
+
+PublicTransport:name
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Agency> , <http://vocab.gtfs.org/terms#Stop> , <http://vocab.gtfs.org/terms#routeType> , <http://vocab.gtfs.org/terms#Route> ;
+      rdfs:range xsd:string .
+
+PublicTransport:headsign
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Trip> ;
+      rdfs:range xsd:string .
+
+PublicTransport:hasStopTime
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Stop> , <http://vocab.gtfs.org/terms#Trip> ;
+      rdfs:range <http://vocab.gtfs.org/terms#StopTime> .
+
+PublicTransport:agency_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Agency> ;
+      rdfs:range xsd:string .
+
+PublicTransport:route_type
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#routeType> ;
+      rdfs:range xsd:string .
+
+PublicTransport:saturday
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#CalendarRule> ;
+      rdfs:range xsd:boolean .
+
+PublicTransport:ConcepciónJerónima-Aluche
+      a       owl:NamedIndividual , <http://vocab.gtfs.org/terms#Trip> ;
+      rdfs:comment "Viaje entre Concepción Jerónima - Aluche" ;
+      PublicTransport:direction
+              "1"^^xsd:string ;
+      PublicTransport:hasStopTime
+              PublicTransport:StopTime_ConcepciónJerónima-Aluche ;
+      PublicTransport:headsign
+              "Concepción Jerónima - Aluche"^^xsd:string ;
+      PublicTransport:trip_id
+              "LV0310012"^^xsd:string .
+
+<http://vocab.gtfs.org/terms#CalendarRule>
+      a       owl:Class .
+
+PublicTransport:minimumTransferTime
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#TransferRule> ;
+      rdfs:range xsd:int .
+
+PublicTransport:PlazaMayor
+      a       owl:NamedIndividual , <http://vocab.gtfs.org/terms#Stop> ;
+      rdfs:comment "Parada de bus Plaza Mayor" ;
+      PublicTransport:code
+              "277"^^xsd:string ;
+      PublicTransport:hasStopTime
+              PublicTransport:StopTime_PlazaMayor-ConcepciónJerónima ;
+      PublicTransport:hasTransferRule
+              PublicTransport:TransferPlazaMayor ;
+      PublicTransport:name
+              "Plaza Mayor"^^xsd:string ;
+      PublicTransport:stop_id
+              "277"^^xsd:string .
+
+PublicTransport:monday
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#CalendarRule> ;
+      rdfs:range xsd:boolean .
+
+PublicTransport:TransferPlazaMayor
+      a       owl:NamedIndividual , <http://vocab.gtfs.org/terms#TransferRule> ;
+      rdfs:comment "Transferencias que se pueden hacer en la parada Plaza Mayor" ;
+      PublicTransport:destinatioStop
+              "457"^^xsd:string ;
+      PublicTransport:minimumTransferTime
+              "10"^^xsd:int .
+
+PublicTransport:hasTransferRule
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Stop> ;
+      rdfs:range <http://vocab.gtfs.org/terms#TransferRule> .
+
+PublicTransport:direction
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Trip> ;
+      rdfs:range xsd:string .
+
+PublicTransport:friday
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#CalendarRule> ;
+      rdfs:range xsd:boolean .
+
+PublicTransport:StopTime_ConcepciónJerónima-Aluche
+      a       owl:NamedIndividual , <http://vocab.gtfs.org/terms#StopTime> ;
+      rdfs:comment "Tiempo en para de bus Concepción Jerónima" ;
+      PublicTransport:arrivalTime
+              "07:30:00"^^xsd:string ;
+      PublicTransport:departureTime
+              "07:35:00"^^xsd:string ;
+      PublicTransport:hasStopTime
+              PublicTransport:ConcepciónJerónima .
+
+PublicTransport:wednesday
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#CalendarRule> ;
+      rdfs:range xsd:boolean .
+
+PublicTransport:hasTrip
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Route> ;
+      rdfs:range <http://vocab.gtfs.org/terms#Trip> .
+
+<http://vocab.gtfs.org/terms#CalendarDateRule>
+      a       owl:Class .
+
+PublicTransport:hasCalendarRule
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#CalendarRule> ;
+      rdfs:range <http://vocab.gtfs.org/terms#Trip> .
+
+PublicTransport:CasaDeCampo
+      a       owl:NamedIndividual , <http://vocab.gtfs.org/terms#Stop> ;
+      PublicTransport:code
+              "457"^^xsd:string ;
+      PublicTransport:name
+              "Casa de Campo"^^xsd:string ;
+      PublicTransport:stop_id
+              "457"^^xsd:string .
+
+PublicTransport:route_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Route> ;
+      rdfs:range xsd:string .
+
+PublicTransport:trip_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Trip> ;
+      rdfs:range xsd:string .
+
+<http://vocab.gtfs.org/terms#TransferRule>
+      a       owl:Class .
+
+<http://vocab.gtfs.org/terms#Agency>
+      a       owl:Class .
+
+PublicTransport:thursday
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#CalendarRule> ;
+      rdfs:range xsd:boolean .
+
+PublicTransport:departureTime
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#StopTime> ;
+      rdfs:range xsd:string .
+
+PublicTransport:PlazaMayor-ConcepciónJerónima
+      a       owl:NamedIndividual , <http://vocab.gtfs.org/terms#Trip> ;
+      rdfs:comment "Viaje entre Plaza Mayor - Concepción Jerónima " ;
+      PublicTransport:direction
+              "1"^^xsd:string ;
+      PublicTransport:hasStopTime
+              PublicTransport:StopTime_PlazaMayor-ConcepciónJerónima ;
+      PublicTransport:headsign
+              "Plaza Mayor-Concepción Jerónima"^^xsd:string ;
+      PublicTransport:trip_id
+              "LV0310011"^^xsd:string .
+
+PublicTransport:routeUrl
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Route> ;
+      rdfs:range xsd:string .
+
+PublicTransport:Calendar-LV
+      a       <http://vocab.gtfs.org/terms#CalendarRule> , owl:NamedIndividual ;
+      rdfs:comment "Servicio de bus disponible de Lunes a Viernes" ;
+      PublicTransport:friday
+              "true"^^xsd:boolean ;
+      PublicTransport:monday
+              "true"^^xsd:boolean ;
+      PublicTransport:saturday
+              "false"^^xsd:boolean ;
+      PublicTransport:service_id
+              "LV"^^xsd:string ;
+      PublicTransport:sunday
+              "false"^^xsd:boolean ;
+      PublicTransport:thursday
+              "true"^^xsd:boolean ;
+      PublicTransport:tuesday
+              "true"^^xsd:boolean ;
+      PublicTransport:wednesday
+              "true"^^xsd:boolean .
+
+PublicTransport:RouteTypeBus
+      a       owl:NamedIndividual , <http://vocab.gtfs.org/terms#routeType> ;
+      rdfs:comment "Tipo de ruta, en este caso es ruta de bus" ;
+      PublicTransport:name
+              "Bus"^^xsd:string ;
+      PublicTransport:route_type
+              "3"^^xsd:string .
+
+PublicTransport:destinatioStop
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#TransferRule> ;
+      rdfs:range xsd:string .
+
+PublicTransport:url
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#Agency> ;
+      rdfs:range xsd:string .
+
+PublicTransport:tuesday
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.gtfs.org/terms#CalendarRule> ;
+      rdfs:range xsd:boolean .
+
+untitled-ontology-7:EMT
+      a       owl:NamedIndividual , <http://vocab.gtfs.org/terms#Agency> ;
+      rdfs:comment "Empresa de Transportes de Madrid" ;
+      untitled-ontology-7:hasRoute
+              PublicTransport:PlazaMayor-Aluche ;
+      PublicTransport:agency_id
+              "EMT"^^xsd:string ;
+      PublicTransport:name
+              "Empresa Municipal de Transportes"^^xsd:string ;
+      PublicTransport:url "http://www.emtmadrid.es"^^xsd:string .
+
+PublicTransport:CalendarRuleExceptionLV
+      a       <http://vocab.gtfs.org/terms#CalendarDateRule> , owl:NamedIndividual ;
+      rdfs:comment "Este día no se contará con el servicio de bus" ;
+      PublicTransport:date
+              "20151225"^^xsd:dateTime ;
+      PublicTransport:date_addition
+              "false"^^xsd:boolean ;
+      PublicTransport:service_id
+              "LV"^^xsd:string .
+
+PublicTransport:Aluche
+      a       owl:NamedIndividual , <http://vocab.gtfs.org/terms#Stop> ;
+      rdfs:comment "Parada de bus Aluche" ;
+      PublicTransport:code
+              "456"^^xsd:string ;
+      PublicTransport:name
+              "Aluche"^^xsd:string ;
+      PublicTransport:stop_id
+              "456"^^xsd:string .
+
+PublicTransport:service_id
+      a       owl:DatatypeProperty .
+
+<http://vocab.gtfs.org/terms#Trip>
+      a       owl:Class .

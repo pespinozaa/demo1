@@ -1,0 +1,333 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:untitled-ontology-7="http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#"
+    xmlns:j.0="http://vocab.gtfs.org/terms#"
+    xmlns:PublicTransport="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#hasRoute">
+    <rdfs:range rdf:resource="http://vocab.gtfs.org/terms#Route"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Agency"/>
+    <rdfs:label>hasRoute</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.gtfs.org/terms#routeType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.gtfs.org/terms#StopTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#PlazaMayor-Aluche">
+    <rdfs:comment>Ruta entre Plaza Mayor y Aluche</rdfs:comment>
+    <PublicTransport:hasTrip rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#PlazaMayor-ConcepciónJerónima"/>
+    <PublicTransport:route_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">031</PublicTransport:route_id>
+    <PublicTransport:hasRouteType rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#RouteTypeBus"/>
+    <PublicTransport:hasCalendarRule rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#Calendar-LV"/>
+    <PublicTransport:hasTrip rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#ConcepciónJerónima-Aluche"/>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#Route"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <PublicTransport:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PlazaMayor-Aluche</PublicTransport:name>
+    <PublicTransport:hasCalendarDateRule rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#CalendarRuleExceptionLV"/>
+    <PublicTransport:routeUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.emtmadrid.es/aplicaciones/Itinerarios.aspx?linea=31</PublicTransport:routeUrl>
+    <PublicTransport:route_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FFD700</PublicTransport:route_color>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#date_addition">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#CalendarDateRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#hasRouteType">
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#routeType"/>
+    <rdfs:range rdf:resource="http://vocab.gtfs.org/terms#Route"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#stop_id">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Stop"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.gtfs.org/terms#Route">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#sunday">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#CalendarRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#date">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#CalendarDateRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#ConcepciónJerónima">
+    <PublicTransport:hasStopTime rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#StopTime_ConcepciónJerónima-Aluche"/>
+    <rdfs:comment>Parada de bus Concepción Jerónima</rdfs:comment>
+    <PublicTransport:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concepción Jerónima</PublicTransport:name>
+    <PublicTransport:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">112</PublicTransport:code>
+    <PublicTransport:stop_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">112</PublicTransport:stop_id>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#Stop"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Stop"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#arrivalTime">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#StopTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#hasCalendarDateRule">
+    <rdfs:range rdf:resource="http://vocab.gtfs.org/terms#Trip"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#CalendarDateRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.gtfs.org/terms#Stop">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#route_color">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Route"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#StopTime_PlazaMayor-ConcepciónJerónima">
+    <PublicTransport:hasStopTime rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#PlazaMayor"/>
+    <rdfs:comment>Tiempo en para de bus Plaza Mayor</rdfs:comment>
+    <PublicTransport:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">07:05:00</PublicTransport:departureTime>
+    <PublicTransport:arrivalTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">07:00:00</PublicTransport:arrivalTime>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#StopTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#routeType"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Stop"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Route"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Agency"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#headsign">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Trip"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#hasStopTime">
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Trip"/>
+    <rdfs:range rdf:resource="http://vocab.gtfs.org/terms#StopTime"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Stop"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#agency_id">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Agency"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#route_type">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#routeType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#saturday">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#CalendarRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#ConcepciónJerónima-Aluche">
+    <PublicTransport:hasStopTime rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#StopTime_ConcepciónJerónima-Aluche"/>
+    <rdfs:comment>Viaje entre Concepción Jerónima - Aluche</rdfs:comment>
+    <PublicTransport:trip_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LV0310012</PublicTransport:trip_id>
+    <PublicTransport:headsign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concepción Jerónima - Aluche</PublicTransport:headsign>
+    <PublicTransport:direction rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</PublicTransport:direction>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#Trip"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.gtfs.org/terms#CalendarRule">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#minimumTransferTime">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#TransferRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#PlazaMayor">
+    <PublicTransport:hasTransferRule rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#TransferPlazaMayor"/>
+    <PublicTransport:hasStopTime rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#StopTime_PlazaMayor-ConcepciónJerónima"/>
+    <rdfs:comment>Parada de bus Plaza Mayor</rdfs:comment>
+    <PublicTransport:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plaza Mayor</PublicTransport:name>
+    <PublicTransport:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">277</PublicTransport:code>
+    <PublicTransport:stop_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">277</PublicTransport:stop_id>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#Stop"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#monday">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#CalendarRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#TransferPlazaMayor">
+    <rdfs:comment>Transferencias que se pueden hacer en la parada Plaza Mayor</rdfs:comment>
+    <PublicTransport:destinatioStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">457</PublicTransport:destinatioStop>
+    <PublicTransport:minimumTransferTime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PublicTransport:minimumTransferTime>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#TransferRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#hasTransferRule">
+    <rdfs:range rdf:resource="http://vocab.gtfs.org/terms#TransferRule"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Stop"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#direction">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Trip"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#friday">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#CalendarRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#StopTime_ConcepciónJerónima-Aluche">
+    <PublicTransport:hasStopTime rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#ConcepciónJerónima"/>
+    <rdfs:comment>Tiempo en para de bus Concepción Jerónima</rdfs:comment>
+    <PublicTransport:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">07:35:00</PublicTransport:departureTime>
+    <PublicTransport:arrivalTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">07:30:00</PublicTransport:arrivalTime>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#StopTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#wednesday">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#CalendarRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#hasTrip">
+    <rdfs:range rdf:resource="http://vocab.gtfs.org/terms#Trip"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Route"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.gtfs.org/terms#CalendarDateRule">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#hasCalendarRule">
+    <rdfs:range rdf:resource="http://vocab.gtfs.org/terms#Trip"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#CalendarRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#CasaDeCampo">
+    <PublicTransport:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casa de Campo</PublicTransport:name>
+    <PublicTransport:stop_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">457</PublicTransport:stop_id>
+    <PublicTransport:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">457</PublicTransport:code>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#Stop"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#route_id">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Route"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#trip_id">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Trip"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.gtfs.org/terms#TransferRule">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.gtfs.org/terms#Agency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#thursday">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#CalendarRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#departureTime">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#StopTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#PlazaMayor-ConcepciónJerónima">
+    <PublicTransport:hasStopTime rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#StopTime_PlazaMayor-ConcepciónJerónima"/>
+    <rdfs:comment>Viaje entre Plaza Mayor - Concepción Jerónima </rdfs:comment>
+    <PublicTransport:headsign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plaza Mayor-Concepción Jerónima</PublicTransport:headsign>
+    <PublicTransport:trip_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LV0310011</PublicTransport:trip_id>
+    <PublicTransport:direction rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</PublicTransport:direction>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#Trip"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#routeUrl">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Route"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#Calendar-LV">
+    <rdfs:comment>Servicio de bus disponible de Lunes a Viernes</rdfs:comment>
+    <PublicTransport:monday rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</PublicTransport:monday>
+    <PublicTransport:thursday rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</PublicTransport:thursday>
+    <PublicTransport:tuesday rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</PublicTransport:tuesday>
+    <PublicTransport:service_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LV</PublicTransport:service_id>
+    <PublicTransport:friday rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</PublicTransport:friday>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#CalendarRule"/>
+    <PublicTransport:wednesday rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</PublicTransport:wednesday>
+    <PublicTransport:sunday rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</PublicTransport:sunday>
+    <PublicTransport:saturday rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</PublicTransport:saturday>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#RouteTypeBus">
+    <rdfs:comment>Tipo de ruta, en este caso es ruta de bus</rdfs:comment>
+    <PublicTransport:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bus</PublicTransport:name>
+    <PublicTransport:route_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</PublicTransport:route_type>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#routeType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#destinatioStop">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#TransferRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#url">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#Agency"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#tuesday">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.gtfs.org/terms#CalendarRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#EMT">
+    <untitled-ontology-7:hasRoute rdf:resource="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#PlazaMayor-Aluche"/>
+    <rdfs:comment>Empresa de Transportes de Madrid</rdfs:comment>
+    <PublicTransport:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.emtmadrid.es</PublicTransport:url>
+    <PublicTransport:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Empresa Municipal de Transportes</PublicTransport:name>
+    <PublicTransport:agency_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMT</PublicTransport:agency_id>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#Agency"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#CalendarRuleExceptionLV">
+    <rdfs:comment>Este día no se contará con el servicio de bus</rdfs:comment>
+    <PublicTransport:date_addition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</PublicTransport:date_addition>
+    <PublicTransport:service_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LV</PublicTransport:service_id>
+    <PublicTransport:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">20151225</PublicTransport:date>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#CalendarDateRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#Aluche">
+    <rdfs:comment>Parada de bus Aluche</rdfs:comment>
+    <PublicTransport:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aluche</PublicTransport:name>
+    <PublicTransport:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">456</PublicTransport:code>
+    <PublicTransport:stop_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">456</PublicTransport:stop_id>
+    <rdf:type rdf:resource="http://vocab.gtfs.org/terms#Stop"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport#service_id">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.gtfs.org/terms#Trip">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
